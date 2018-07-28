@@ -15,7 +15,8 @@
         android:layout_alignStart="@+id/et_date"
         android:ems="10"
         android:singleLine="true"
-        android:imeOptions="actionNext"/>
+        android:imeOptions="actionDone"
+        android:backgroundTint="@drawable/focus_tint_text" />
 
     <TextView
         android:id="@+id/tv_name"
@@ -40,7 +41,8 @@
         android:layout_alignStart="@+id/et_pollname"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:imeOptions="actionDone"/>
+        android:imeOptions="actionDone"
+        android:backgroundTint="@drawable/focus_tint_text" />
 
     <TextView
         android:id="@+id/tv_numofparti"
@@ -64,7 +66,8 @@
         android:layout_alignStart="@+id/et_pollname"
         android:ems="10"
         android:textColor="@android:color/white"
-        android:inputType="date"/>
+        android:inputType="date"
+        android:backgroundTint="@drawable/focus_tint_text" />
 
     <TextView
         android:id="@+id/tv_date"
@@ -110,7 +113,8 @@
         android:layout_marginRight="10dp"
         android:layout_toEndOf="@+id/tv_numofparti"
         android:ems="10"
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:backgroundTint="@drawable/focus_tint_text" />
 
     <Button
         android:id="@+id/butt_create"
