@@ -8,6 +8,22 @@
     tools:context="com.armyof2.poll4bunk.MainActivity">
 
 
+    <Button
+        android:id="@+id/butt_sendop2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/butt_sendop"
+        android:layout_alignBottom="@+id/butt_sendop"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="250dp"
+        android:background="@drawable/roundbutton"
+        android:onClick="onChatRoomButtonClicked"
+        android:text="Server Chat"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
     <TextView
         android:id="@+id/tv_admin"
         android:layout_width="match_parent"
@@ -46,9 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/rad_op2"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/tv_admin"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:text="Would you like to participate in Mass Bunk on:  "
         android:textColor="@android:color/white"
@@ -61,7 +76,7 @@
         android:layout_alignBottom="@+id/tv_quest"
         android:layout_alignParentRight="true"
         android:layout_centerHorizontal="false"
-        android:layout_marginRight="40dp"
+        android:layout_marginRight="30dp"
         android:text="$date"
         android:textColor="@color/lightGreen"
         android:textSize="24sp" />
@@ -74,6 +89,7 @@
         android:layout_above="@+id/rad_op3"
         android:layout_alignStart="@+id/tv_admin"
         android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
         android:buttonTint="@color/PieChartGreen"
         android:text="Yes! Count me in!"
         android:textColor="@android:color/white"
@@ -86,7 +102,7 @@
         android:layout_alignBaseline="@+id/rad_op1"
         android:layout_alignBottom="@+id/rad_op1"
         android:layout_alignStart="@+id/rad_op1"
-        android:layout_marginLeft="205dp"
+        android:layout_marginLeft="215dp"
         android:buttonTint="@color/PieChartPink"
         android:text="No, not interested"
         android:textColor="@android:color/white"
@@ -122,17 +138,17 @@
         android:id="@+id/butt_sendop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
 
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/roundbutton"
         android:onClick="onConfirmButtonClicked"
         android:text="Confirm"
         android:textColor="@android:color/white"
-        android:textSize="17sp"
-        android:background="@drawable/roundbutton"/>
+        android:textSize="17sp" />
 
     <TextView
         android:id="@+id/tv_cdtimer"

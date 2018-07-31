@@ -228,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
         myRef.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                if(!dataSnapshot.getKey().equals("YuserUIDs") && !dataSnapshot.getKey().equals("Bunker's Name")) {
+                if(!dataSnapshot.getKey().equals("YuserUIDs") && !dataSnapshot.getKey().equals("Bunker's Name") && !dataSnapshot.getKey().equals("Zmessages")) {
                     String value = dataSnapshot.getValue(String.class);
                     bunkServerStuff.add(value);
                     Log.d("TAG", "onChildAdded: " + bunkServerStuff);
@@ -265,7 +265,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                if(!dataSnapshot.getKey().equals("YuserUIDs") && !dataSnapshot.getKey().equals("Bunker's Name")) {
+                if(!dataSnapshot.getKey().equals("YuserUIDs") && !dataSnapshot.getKey().equals("Bunker's Name") && !dataSnapshot.getKey().equals("Zmessages")) {
                     String value = dataSnapshot.getValue(String.class);
                     bunkServerVotes.add(value);
                    /* if (dataSnapshot.getKey().equals("Bunk Wait")) {
@@ -843,6 +843,10 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
+    public void onChatRoomButtonClicked(View view){
+        Intent w = new Intent(this, ChatRoomActivity.class);
+        startActivity(w);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
